@@ -1,0 +1,66 @@
+.side-bar{
+  
+  height: 100vh;
+  width: 300px;
+  background-color: #253141;
+  color: #ffffff;
+  float: left;
+  font-weight: bold;
+
+    .side-header{
+      height: 100px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+
+      &__top-items{ 
+        height: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        
+        &__user-name{
+          width: calc( 100% - 60px);
+          line-height: 20px;
+          font-size: 16px;
+        }
+
+        &__btn{
+          width: 60px;
+          display: flex;
+          align-items: center;
+          background-color: #333333;
+          text-decoration: none;
+          justify-content: flex-end;
+          
+          .contents__btn--icon{
+            color:#ffffff;
+          }
+
+          &__new-group{  
+            padding-right: 5px;
+          }
+        }
+      }
+    }
+
+    .side-contents{
+      height: calc( 100vh - 100px );
+      background-color: #2f3e51; 
+      padding: 20px 20px 0;
+    
+      &__groups{
+        margin-bottom: 40px;
+        
+        &__group-name{
+          font-size: 15px;
+          margin-bottom: 5px;     
+        }
+    
+          &__group-message{
+          font-size: 11px;
+          }
+    
+      }
+    }
+  }
