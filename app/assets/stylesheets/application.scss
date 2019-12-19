@@ -1,10 +1,12 @@
 @import "font-awesome-sprockets";
 @import "./font-awesome";
 @import "./reset";
+@import "config/colors";
 a{
   text-decoration: none;
 }
 @import "./messages";
-@import "./chat-main";
-@import "./side-bar";
-@import "./side-contents";
+@import "./modules/chat-main";
+@import "./modules/side-bar";
+@import "./modules/user/user";
+@import "./modules/flash";
