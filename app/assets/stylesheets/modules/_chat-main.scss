@@ -44,6 +44,7 @@
     height: calc( 100vh - 190px );
     background-color: #fafafa;
     padding: 35px 40px;
+    overflow: scroll;
     
     &__message{
       margin-bottom: 46px;
@@ -114,6 +115,7 @@
         background-color: #38aef0;
         margin-left: 15px;
         color: #ffffff;
+        cursor: pointer;
     }     
     }  
   }
