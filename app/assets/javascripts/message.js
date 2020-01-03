@@ -52,7 +52,6 @@ $(function(){
       contentType: false
     })
     .done(function(data){
-      // console.log(data)
       var html = buildHTML(data)
       $('.chat-main__message-list').append(html);
       $('.chat-main__message-list').animate({
