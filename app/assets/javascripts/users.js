@@ -43,13 +43,11 @@ $(function() {
       dataType: 'json'
     })
       .done(function(users) {
-        // console.log("堂");
         $("#user-search-result").empty();
 
         if (users.length !== 0) {
           users.forEach(function(user) {
             addUser(user);
-            // console.log(html);
           });
         } else if (input.length == 0) {
           return false;
@@ -63,16 +61,13 @@ $(function() {
   });
   $(document).on("click", ".chat-group-user__btn--add", function() {
     console.log
-    //追加ボタンがクリックされたユーザーが、検索結果一覧から消える
-    //data-user-idとdata-user-nameを取得する
       const userName = $(this).attr("data-user-name");
       const userId = $(this).attr("data-user-id");
       $(this)
-        .parent() //".chat-group-user__btn--add"の親要素を取得する
-        .remove(); //".chat-group-user__btn--add"のを削除する
-      // binding.pry
+        .parent() 
+        .remove(); 
+      
       addDeleteUser(userName, userId);
-      // binding.pry
       addMember(userId);
   });
   $(document).on("click", ".chat-group-user__btn--remove", function() {
